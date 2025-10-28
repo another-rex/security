@@ -15,6 +15,7 @@
         "run",
         "-v",
         "${PWD}:${PWD}",
+        "-it",
         "ghcr.io/google/osv-scanner:nightly",
         "mcp"
       ]
