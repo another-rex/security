@@ -15,10 +15,13 @@
         "run",
         "-v",
         "${PWD}:${PWD}",
-        "-it",
+        "-i",
+        "-e",
+        "--rm",
         "ghcr.io/google/osv-scanner:nightly",
-        "mcp"
-      ]
+        "experimental-mcp"
+      ],
+      "timeout": 300000
     }
   }
 }
