@@ -8,6 +8,16 @@
       "args": [
         "${extensionPath}/mcp-server/dist/security.js"
       ]
+    },
+    "osvServer": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-v",
+        "${PWD}:${PWD}",
+        "ghcr.io/google/osv-scanner:nightly",
+        "mcp"
+      ]
     }
   }
 }
